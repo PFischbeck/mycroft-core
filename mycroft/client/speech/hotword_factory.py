@@ -370,7 +370,7 @@ class PorcupineHotWord(HotWordEngine):
 
     def stop(self):
         if self.porcupine is not None:
-            porcupine.delete()
+            self.porcupine.delete()
 
 
 class HotWordFactory:
